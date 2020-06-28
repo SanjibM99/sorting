@@ -1,4 +1,4 @@
-def part(list,first,last):
+def partition(list,first,last):
 	pivot=list[first]
 	left=first
 	right=last
@@ -16,7 +16,7 @@ def part(list,first,last):
 	
 def quick(list,first,last):
 	if first<last:
-		p=part(list,first,last)
+		p=partition(list,first,last)
 		quick(list,first,p-1)
 		quick(list,p+1,last)
 
